@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+F:\download\algo\AAA\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3937632896.index
+196858637.index
+3337720908.index
+3953192205.index
+1092971507.index
+472456348.index

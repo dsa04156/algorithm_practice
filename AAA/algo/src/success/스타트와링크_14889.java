@@ -1,0 +1,68 @@
+package success;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+
+public class 스타트와링크_14889 {
+	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	static StringTokenizer st;
+	static int[][] arr;
+	static boolean[] v;
+	static int[] brr;
+	static int N,min=Integer.MAX_VALUE;
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		N = Integer.parseInt(br.readLine());
+		arr = new int[N][N];
+		brr= new int[N];
+		for(int i=0;i<N;i++) {
+			brr[i]=i;
+		}
+		v=new boolean[N];
+		for(int i=0;i<N;i++) {
+			st=new StringTokenizer(br.readLine());
+			for(int j=0;j<N;j++) {
+				arr[i][j]=Integer.parseInt(st.nextToken());
+			}
+		}
+		s(0,0);
+		System.out.println(min);
+		
+	}
+	int sum(int x,int y) {
+		return arr[x][y]+arr[y][x];
+	}
+	
+	static void s(int idx,int cnt) {
+		if(cnt==N/2) {
+			int s_team =0;
+			int l_team =0;
+			ArrayList<Integer> s = new ArrayList<>();
+			ArrayList<Integer> l = new ArrayList<>();
+			for(int i=0;i<brr.length;i++) {
+				if(v[i]==true) {
+					s.add(brr[i]);
+				}
+				else{
+					l.add(brr[i]);
+				}
+			}
+			for(int i=0;i<s.size();i++) {
+				for(int j=i;j<s.size();j++) {
+					s_team +=arr[s.get(i)][s.get(j)]+arr[s.get(j)][s.get(i)];
+					l_team +=arr[l.get(i)][l.get(j)]+arr[l.get(j)][l.get(i)];
+				}
+			}
+			min=Math.min(min, Math.abs(s_team-l_team));
+			return;
+		}
+		if(idx==brr.length) return;
+		
+		v[idx]=true;
+		s(idx+1,cnt+1);
+		v[idx]=false;
+		s(idx+1,cnt);
+	}
+}

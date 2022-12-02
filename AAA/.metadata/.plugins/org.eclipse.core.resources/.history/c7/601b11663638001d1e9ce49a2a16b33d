@@ -1,0 +1,51 @@
+package algo;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Main {
+	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	static StringTokenizer st;
+	static int[][] arr;
+	static boolean[] v;
+	static int[] brr;
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		int N = Integer.parseInt(br.readLine());
+		arr = new int[N][N];
+		brr= new int[N];
+		for(int i=0;i<N;i++) {
+			brr[i]=i;
+		}
+		v=new boolean[N];
+		for(int i=0;i<N;i++) {
+			st=new StringTokenizer(br.readLine());
+			for(int j=0;j<N;j++) {
+				arr[i][j]=Integer.parseInt(st.nextToken());
+			}
+		}
+		s(0,0);
+	}
+	int sum(int x,int y) {
+		return arr[x][y]+arr[y][x];
+	}
+	
+	static void s(int idx,int cnt) {
+		if(cnt==2) {
+			for(int i=0;i<brr.length;i++) {
+				if(v[i]==true) {
+					System.out.print(brr[i]+" ");
+				}
+			}
+			System.out.println();
+			return;
+		}
+		if(idx==brr.length) return;
+		
+		v[idx]=true;
+		s(idx+1,cnt+1);
+		v[idx]=false;
+		s(idx+1,cnt);
+	}
+}

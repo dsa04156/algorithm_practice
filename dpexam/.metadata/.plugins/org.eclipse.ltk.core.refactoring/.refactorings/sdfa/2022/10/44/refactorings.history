@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.ssafy.test.service.NoteServiceImpl&apos; to &apos;NoteService&apos;&#x0D;&#x0A;- Original project: &apos;sdfa&apos;&#x0D;&#x0A;- Original element: &apos;com.ssafy.test.service.NoteServiceImpl&apos;&#x0D;&#x0A;- Renamed element: &apos;com.ssafy.test.service.NoteService&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;NoteServiceImpl&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.ssafy.test.service{NoteServiceImpl.java[NoteServiceImpl" matchStrategy="1" name="NoteService" qualified="false" references="true" similarDeclarations="false" stamp="1666949988736" textual="false" version="1.0"/>
+</session>

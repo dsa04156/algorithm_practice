@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+F:\download\algo\dpexam\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+428110924.index
+1766186846.index
+4134843999.index
+2832278153.index
+950898215.index
+2323402021.index
+2690192302.index

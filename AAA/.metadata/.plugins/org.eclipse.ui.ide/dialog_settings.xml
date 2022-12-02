@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="F:\download\javaweb\web"/>
+		<item value="F:\download\javaweb\soff"/>
+		<item value="F:\download\javaweb\daily\back_db_hw_04_2"/>
+		<item value="F:\download\javaweb\back_db_hw_03_2"/>
+		<item value="F:\download\javaweb\daily\back_db_ws_03_1"/>
+		<item value="F:\download\javaweb\daily\back_db_ws_03_1\.git"/>
+	</list>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="204" key="DIALOG_X_ORIGIN"/>
+		<item value="203" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>
